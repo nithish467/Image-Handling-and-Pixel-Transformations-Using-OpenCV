@@ -33,16 +33,15 @@ Split the image (boy.jpg) into B, G, R components and display the channels
 
 ### Ex. No. 01
 
-#### 1. Read the image ('Eagle_in_Flight.jpg') using OpenCV imread() as a grayscale image.
-```python
-# Import libraries
+#### 1. Read the image ('nithish.jpg'') using OpenCV imread() as a grayscale image.
+```
 import cv2
-import numpy as np
 import matplotlib.pyplot as plt
+# Read the image using OpenCV
+img = cv2.imread('nithish.jpg', cv2.IMREAD_COLOR)
+# Convert BGR (OpenCV's default) to RGB (Matplotlib's expected color order)
+img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
-
-bgr_img = cv2.imread('Eagle_in_Flight.jpg')
-bgr_img = cv2.imread('Eagle_in_Flight.jpg',0)
 ```
 
 #### 2. Print the image width, height & Channel.
@@ -52,33 +51,37 @@ bgr_img.shape
 
 #### 3. Display the image using matplotlib imshow().
 ```python
-plt.imshow(bgr_img)
-plt.title('BGR Image')
-plt.axis('off')
+# Display the image using Matplotlib
+plt.imshow(img_rgb, cmap='viridis')  # You can change 'viridis' to another cmap or use None for RGB images
+plt.title("Original Image")
+plt.axis('off')  # Removes axis ticks and labels
 plt.show()
 ```
 
 #### 4. Save the image as a PNG file using OpenCV imwrite().
 ```python
-bgr_img=cv2.imread('Eagle_in_Flight.jpg')
-cv2.imwrite('Eagle.png',bgr_img)
+# Load the image
+image = cv2.imread('Qno. 1.jpg')
+# Convert BGR (OpenCV's default) to RGB (Matplotlib's expected color order)
+img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+img_rgb.shape
 ```
 
 #### 5. Read the saved image above as a color image using cv2.cvtColor().
 ```python
-bgr_img=cv2.imread('Eagle.png')
-rgb_color_img = cv2.cvtColor(bgr_img, cv2.COLOR_BGR2RGB)
+# Draw a line from top-left to bottom-right
+line_img = cv2.line(img_rgb, (0, 0), (768, 600), (255, 0, 0), 2) # cv2.line(image, start_point, end_point, color, thickness)
 ```
 
 #### 6. Display the Colour image using matplotlib imshow() & Print the image width, height & channel.
 ```python
-plt.imshow(rgb_color_img)
-plt.title('Color Image')
-plt.axis('on')
+plt.imshow(line_img, cmap='viridis')  
+plt.title("Image with Line")
+plt.axis('off')  
 plt.show()
 ```
 
-#### 7. Crop the image to extract any specific (Eagle alone) object from the image.
+#### 7. Crop the image to extract any specific object from the image.
 ```python
 crop = rgb_color_img[20:430,200:550] 
 plt.imshow(crop[:,:,::-1])
@@ -223,57 +226,59 @@ plt.show()
 ## Output:
 **i)** Read and Display an Image.
 
-1.Read 'Eagle_in_Flight.jpg' as grayscale and display:
+1.Read 'nithish.jpg' as grayscale and display:  
+<img width="335" height="487" alt="image" src="https://github.com/user-attachments/assets/e4a8f27e-9257-49b0-a62f-8b61eba2af4f" />
 
-<img width="547" height="412" alt="image" src="https://github.com/user-attachments/assets/cc7463a8-b03b-49c5-83b8-9088a53ab76d" />
 
-2.Save image as PNG and display:
+2.Image with line:
 
-<img width="615" height="447" alt="image" src="https://github.com/user-attachments/assets/80f40abf-c2ee-438c-b1a1-2e0ce336d80a" />
+<img width="340" height="470" alt="image" src="https://github.com/user-attachments/assets/96a031f7-1fdc-4b16-9198-af4193f1d44c" />
 
-3.Cropped image:
+3.Image with circle:
 
-<img width="362" height="474" alt="image" src="https://github.com/user-attachments/assets/2e6ece34-3d1b-4601-91d9-b33b58235be1" />
+<img width="343" height="475" alt="image" src="https://github.com/user-attachments/assets/9e06c3dd-a91b-4723-ab84-1ddeee80ea20" />
 
-4.Resize and flip Horizontally:
+4.Image with Rectangle: 
 
-<img width="403" height="416" alt="image" src="https://github.com/user-attachments/assets/ef267ab4-70ba-41bd-a651-f4e6c19aa768" />
+<img width="337" height="480" alt="image" src="https://github.com/user-attachments/assets/1d4039f0-c19e-43ee-8810-3a5242f827ec" />
 
-5.Read 'Apollo-11-launch.jpg' and Display the final annotated image:
+5. Image with Text:
 
-<img width="742" height="372" alt="image" src="https://github.com/user-attachments/assets/7dca5512-e882-4cbc-9deb-8cb4ab58374d" />
+<img width="340" height="482" alt="image" src="https://github.com/user-attachments/assets/c478cf55-c017-4dcf-971d-c1827df95654" />
 
-<img width="686" height="364" alt="image" src="https://github.com/user-attachments/assets/c25f30dc-b453-43f1-b7bf-32f41a69c0b0" />
+6. Original RGB Image:
 
-**ii)** Adjust Image Brightness.
+<img width="337" height="475" alt="image" src="https://github.com/user-attachments/assets/27b9a802-ba8d-4cbb-8d5f-3aca87e29fa5" />
 
-Create brighter and darker images and display:
+7. HSV Image,Grayscale Image and YCrCb Image:
+
+<img width="330" height="472" alt="image" src="https://github.com/user-attachments/assets/ce514f98-51b7-4728-b821-ef6ee2d82e5f" />
+
+<img width="362" height="477" alt="image" src="https://github.com/user-attachments/assets/d6be6af2-ef56-4c8d-b2de-a112f89dfa9b" />
+
+<img width="351" height="476" alt="image" src="https://github.com/user-attachments/assets/0d029a5f-99cf-47c2-8ef0-a1091059d468" />
+
+8. HSV to RGB Image:
  
-<img width="841" height="233" alt="image" src="https://github.com/user-attachments/assets/972d26dd-a3b7-4362-81e8-640ae7cfe23c" />
+<img width="337" height="483" alt="image" src="https://github.com/user-attachments/assets/9b08f95d-04d3-4af2-a1f3-5afc23187f04" />
 
-**iii)** Modify Image Contrast.
- 
-Modify contrast using scaling factors 1.1 and 1.2:
- 
-<img width="865" height="229" alt="image" src="https://github.com/user-attachments/assets/7ef6622f-c0ba-41c1-8f75-006100b26be7" />
-  
-**iv)** Generate Third Image Using Bitwise Operations.
+9. Image With 300 x 300 White Box:
 
-1.Split 'Boy.jpg' into B, G, R components and display:
+<img width="335" height="482" alt="image" src="https://github.com/user-attachments/assets/a77daf56-ae6d-46a6-8c15-ce30d98e2fa4" />
 
-<img width="861" height="230" alt="image" src="https://github.com/user-attachments/assets/6755ef3c-21e4-4387-97ea-8bae4a46b947" />
+10. Resized Image:
 
-2.Merge the R, G, B channels and display:
+<img width="562" height="473" alt="image" src="https://github.com/user-attachments/assets/ae5031d7-aa76-477a-b1b2-ba2e8814e627" />
 
-<img width="446" height="348" alt="image" src="https://github.com/user-attachments/assets/4ddb6daf-8bcd-47e8-87f0-e02002095123" />
+11. Cropped Region Of Interest (ROI) :
 
-3.Split the image into H, S, V components and display:
+<img width="442" height="471" alt="image" src="https://github.com/user-attachments/assets/48c83045-6b62-413b-a349-7d4803434bb1" />
 
-<img width="806" height="239" alt="image" src="https://github.com/user-attachments/assets/200e2579-27b5-4dda-b6b6-0f3170632e2a" />
+12. Flipped Image:
 
-4.Merge the H, S, V channels and display:
+<img width="348" height="478" alt="image" src="https://github.com/user-attachments/assets/a099e53d-b446-4e79-bab2-fa65dd7c688d" />
 
-<img width="844" height="343" alt="image" src="https://github.com/user-attachments/assets/22e70714-8fe4-4d64-9c2a-f88e7fbdd0d3" />
+<img width="336" height="473" alt="image" src="https://github.com/user-attachments/assets/dfae5706-213c-473a-ade1-2b2bd54cd95f" />
 
 ## Result:
 Thus, the images were read, displayed, brightness and contrast adjustments were made, and bitwise operations were performed successfully using the Python program.
