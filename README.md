@@ -227,58 +227,53 @@ plt.show()
 **i)** Read and Display an Image.
 
 1.Read 'nithish.jpg' as grayscale and display:  
-<img width="335" height="487" alt="image" src="https://github.com/user-attachments/assets/e4a8f27e-9257-49b0-a62f-8b61eba2af4f" />
+<img width="240" height="487" alt="image" src="https://github.com/user-attachments/assets/e4a8f27e-9257-49b0-a62f-8b61eba2af4f" />
 
+2.Image with line, Circle and Rectangle:  
 
-2.Image with line:
+<img width="240" height="470" alt="image" src="https://github.com/user-attachments/assets/96a031f7-1fdc-4b16-9198-af4193f1d44c" />
 
-<img width="340" height="470" alt="image" src="https://github.com/user-attachments/assets/96a031f7-1fdc-4b16-9198-af4193f1d44c" />
+<img width="240" height="475" alt="image" src="https://github.com/user-attachments/assets/9e06c3dd-a91b-4723-ab84-1ddeee80ea20" />
 
-3.Image with circle:
+<img width="240" height="480" alt="image" src="https://github.com/user-attachments/assets/1d4039f0-c19e-43ee-8810-3a5242f827ec" />
 
-<img width="343" height="475" alt="image" src="https://github.com/user-attachments/assets/9e06c3dd-a91b-4723-ab84-1ddeee80ea20" />
+3. Image with Text:
 
-4.Image with Rectangle: 
+<img width="240" height="482" alt="image" src="https://github.com/user-attachments/assets/c478cf55-c017-4dcf-971d-c1827df95654" />
 
-<img width="337" height="480" alt="image" src="https://github.com/user-attachments/assets/1d4039f0-c19e-43ee-8810-3a5242f827ec" />
+4. Original RGB Image:
 
-5. Image with Text:
+<img width="240" height="375" alt="image" src="https://github.com/user-attachments/assets/27b9a802-ba8d-4cbb-8d5f-3aca87e29fa5" />
 
-<img width="340" height="482" alt="image" src="https://github.com/user-attachments/assets/c478cf55-c017-4dcf-971d-c1827df95654" />
+5. HSV Image,Grayscale Image and YCrCb Image:
 
-6. Original RGB Image:
+<img width="240" height="372" alt="image" src="https://github.com/user-attachments/assets/ce514f98-51b7-4728-b821-ef6ee2d82e5f" />
 
-<img width="337" height="475" alt="image" src="https://github.com/user-attachments/assets/27b9a802-ba8d-4cbb-8d5f-3aca87e29fa5" />
+<img width="262" height="377" alt="image" src="https://github.com/user-attachments/assets/d6be6af2-ef56-4c8d-b2de-a112f89dfa9b" />
 
-7. HSV Image,Grayscale Image and YCrCb Image:
+<img width="251" height="376" alt="image" src="https://github.com/user-attachments/assets/0d029a5f-99cf-47c2-8ef0-a1091059d468" />
 
-<img width="330" height="472" alt="image" src="https://github.com/user-attachments/assets/ce514f98-51b7-4728-b821-ef6ee2d82e5f" />
-
-<img width="362" height="477" alt="image" src="https://github.com/user-attachments/assets/d6be6af2-ef56-4c8d-b2de-a112f89dfa9b" />
-
-<img width="351" height="476" alt="image" src="https://github.com/user-attachments/assets/0d029a5f-99cf-47c2-8ef0-a1091059d468" />
-
-8. HSV to RGB Image:
+6. HSV to RGB Image:
  
-<img width="337" height="483" alt="image" src="https://github.com/user-attachments/assets/9b08f95d-04d3-4af2-a1f3-5afc23187f04" />
+<img width="237" height="383" alt="image" src="https://github.com/user-attachments/assets/9b08f95d-04d3-4af2-a1f3-5afc23187f04" />
 
-9. Image With 300 x 300 White Box:
+7. Image With 300 x 300 White Box:
 
-<img width="335" height="482" alt="image" src="https://github.com/user-attachments/assets/a77daf56-ae6d-46a6-8c15-ce30d98e2fa4" />
+<img width="235" height="382" alt="image" src="https://github.com/user-attachments/assets/a77daf56-ae6d-46a6-8c15-ce30d98e2fa4" />
 
-10. Resized Image:
+8. Resized Image:
 
-<img width="562" height="473" alt="image" src="https://github.com/user-attachments/assets/ae5031d7-aa76-477a-b1b2-ba2e8814e627" />
+<img width="362" height="373" alt="image" src="https://github.com/user-attachments/assets/ae5031d7-aa76-477a-b1b2-ba2e8814e627" />
 
-11. Cropped Region Of Interest (ROI) :
+9. Cropped Region Of Interest (ROI) :
 
-<img width="442" height="471" alt="image" src="https://github.com/user-attachments/assets/48c83045-6b62-413b-a349-7d4803434bb1" />
+<img width="242" height="371" alt="image" src="https://github.com/user-attachments/assets/48c83045-6b62-413b-a349-7d4803434bb1" />
 
-12. Flipped Image:
+10. Flipped Image:
 
-<img width="348" height="478" alt="image" src="https://github.com/user-attachments/assets/a099e53d-b446-4e79-bab2-fa65dd7c688d" />
+<img width="248" height="378" alt="image" src="https://github.com/user-attachments/assets/a099e53d-b446-4e79-bab2-fa65dd7c688d" />
 
-<img width="336" height="473" alt="image" src="https://github.com/user-attachments/assets/dfae5706-213c-473a-ade1-2b2bd54cd95f" />
+<img width="236" height="373" alt="image" src="https://github.com/user-attachments/assets/dfae5706-213c-473a-ade1-2b2bd54cd95f" />
 
 ## Result:
 Thus, the images were read, displayed, brightness and contrast adjustments were made, and bitwise operations were performed successfully using the Python program.
